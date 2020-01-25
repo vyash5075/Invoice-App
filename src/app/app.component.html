@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="header">
+        <h1> CART</h1>
+    </div>
+    <div id="container">
+<div class="row" >
+    <div class="col-xs-12">
+        <app-item  (total)="onvoice($event)"></app-item>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-checkout *ngFor="let invoicedata of details" [lists]="invoicedata"  (checkout)="billgenerate($event)"
+        ></app-checkout>
+</div>
+    </div>
+
+    
+<div class="row">
+    <div class="col-xs-12">
+        <app-bill *ngFor="let checkdata of bill"
+        [totalbill]="checkdata"
+        ></app-bill>
+    </div>
+</div>
+<div>

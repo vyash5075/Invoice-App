@@ -1,0 +1,18 @@
+<div class="col-xs-6">
+    <p id="heading">ItemName1</p>
+<input type="text" class="form-control" [(ngModel)]="item1" #item>
+<p id="heading">ItemName2</p>
+<input type="text" class="form-control" [(ngModel)]="item2" >
+</div>
+
+<div class="col-xs-6">
+        <p id="heading">Price1</p>
+<input type="text" class="form-control" [(ngModel)]="price1">
+<p id="heading">Price2</p>
+<input type="text" class="form-control" [(ngModel)]="price2">
+<Br><br>
+</div>
+<div class="col-xs-12 text-center">
+<button class="btn btn-primary" (click)="geninvoice()" [disabled]="item.value==' '">Generate Invoice</button>
+
+</div>
