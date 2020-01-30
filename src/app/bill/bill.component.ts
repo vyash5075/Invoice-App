@@ -7,11 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BillComponent implements OnInit {
 
-  constructor() { }
-@Input() totalbill:{itemname1:string,itemname2:any,total:any}
+  constructor() {
+   }
+@Input() totalbill = {}
 
   ngOnInit() {
-    console.log(this.totalbill);
+    console.log(this.totalbill); 
   }
 
 }

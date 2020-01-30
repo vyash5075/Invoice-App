@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { BillComponent } from './bill/bill.component';
-
+//import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { BillComponent } from './bill/bill.component';
     ItemComponent,
     CheckoutComponent,
     BillComponent,
-   
+  
   ],
   imports: [
     BrowserModule,
